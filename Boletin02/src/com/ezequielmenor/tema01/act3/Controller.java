@@ -13,6 +13,7 @@ public class Controller {
     private final Properties prop = new Properties();
     private final File f = new File(RUTA);
 
+
     public Controller() throws Exception{
         if(!f.exists()){
             f.getParentFile().mkdirs();
