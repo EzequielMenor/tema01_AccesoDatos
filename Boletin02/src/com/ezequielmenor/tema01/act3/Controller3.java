@@ -7,14 +7,14 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Properties;
 
-public class Controller {
+public class Controller3 {
     private static final String RUTA = "/Users/ezequielmenor/2DAM/AccesoDatos/tema01/ficheros/usuario.properties";
     private static final String CLAVE = "password";
     private final Properties prop = new Properties();
     private final File f = new File(RUTA);
 
 
-    public Controller() throws Exception{
+    public Controller3() throws Exception{
         if(!f.exists()){
             f.getParentFile().mkdirs();
             prop.setProperty(CLAVE, hashSHA1("S3cret@"));
